@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-OptitrackNatnetEditor-0002.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Intermediate\Build\Win64\AssignmentOneEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnetEditor\Module.OptitrackNatnetEditor.cpp.obj"
+"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnetEditor\Module.OptitrackNatnetEditor.gen.cpp.obj"
+"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnetEditor\Default.rc2.res"
+/OUT:"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnetEditor\UnrealEditor-OptitrackNatnetEditor-0002.lib"

@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-OptitrackLiveLink-0001.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Module.OptitrackLiveLink.cpp.obj"
+"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Module.OptitrackLiveLink.gen.cpp.obj"
+"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Default.rc2.res"
+/OUT:"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\UnrealEditor-OptitrackLiveLink-0001.lib"

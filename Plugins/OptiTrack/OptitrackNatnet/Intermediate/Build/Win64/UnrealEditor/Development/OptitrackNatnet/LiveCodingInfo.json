@@ -1,0 +1,27 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OptitrackNatnet.cpp.obj": [
+			"AnimNode_OptitrackSkeleton.cpp.obj",
+			"OptitrackAnimInstance.cpp.obj",
+			"OptitrackClientOrigin.cpp.obj",
+			"OptitrackDebugHUD.cpp.obj",
+			"OptitrackNatnet.cpp.obj",
+			"OptitrackRigidBodyActor.cpp.obj",
+			"OptitrackRigidBodyComponent.cpp.obj",
+			"OptitrackSkeletonComponent.cpp.obj",
+			"OptitrackSkeletonTypes.cpp.obj"
+		],
+		"Module.OptitrackNatnet.gen.cpp.obj": [
+			"AnimNode_OptitrackSkeleton.gen.cpp.obj",
+			"OptitrackAnimInstance.gen.cpp.obj",
+			"OptitrackClientOrigin.gen.cpp.obj",
+			"OptitrackDebugHUD.gen.cpp.obj",
+			"OptitrackNatnet.init.gen.cpp.obj",
+			"OptitrackRigidBodyActor.gen.cpp.obj",
+			"OptitrackRigidBodyComponent.gen.cpp.obj",
+			"OptitrackSkeletonComponent.gen.cpp.obj",
+			"OptitrackSkeletonTypes.gen.cpp.obj"
+		]
+	}
+}

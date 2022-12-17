@@ -1,0 +1,14 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OptitrackNatnetEditor.cpp.obj": [
+			"AnimGraphNode_OptitrackSkeleton.cpp.obj",
+			"AnimGraphNode_OptitrackSkeleton_DetailCustomization.cpp.obj",
+			"OptitrackNatnetEditor.cpp.obj"
+		],
+		"Module.OptitrackNatnetEditor.gen.cpp.obj": [
+			"AnimGraphNode_OptitrackSkeleton.gen.cpp.obj",
+			"OptitrackNatnetEditor.init.gen.cpp.obj"
+		]
+	}
+}

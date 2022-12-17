@@ -51,6 +51,14 @@
 				"Win64",
 				"Linux"
 			]
+		},
+		{
+			"Name": "OptitrackLiveLink",
+			"Enabled": true
+		},
+		{
+			"Name": "OptitrackNatnet",
+			"Enabled": true
 		}
 	]
 }

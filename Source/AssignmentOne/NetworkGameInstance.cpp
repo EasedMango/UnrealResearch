@@ -38,7 +38,7 @@ void UNetworkGameInstance::OnCreateSessionComplete(FName SessionName, bool Succe
 	if (Succeeded)
 	{
 		Print("Succeeded");
-		GetWorld()->ServerTravel("/Game/FirstPerson/Maps/FirstPersonLevelMap?listen");
+		GetWorld()->ServerTravel("/Game/OptitrackTestMap?listen");
 	}
 }
 
