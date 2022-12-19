@@ -1,21 +1,21 @@
-C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\DateTime.cpp
+"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\DateTime.cpp"
 /I .
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\src
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\src\rd_gen_cpp\src
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\thirdparty
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\tl
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\include
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\src"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\src\rd_gen_cpp\src"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\thirdparty"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\tl"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\include"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -26,9 +26,9 @@ C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderL
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Definitions.h"
-/Fo"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\DateTime.cpp.obj"
-/sourceDependencies C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\DateTime.cpp.json
+/FI"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Definitions.h"
+/Fo"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\DateTime.cpp.obj"
+/sourceDependencies "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\DateTime.cpp.json"
 /Zc:inline
 /nologo
 /Oi

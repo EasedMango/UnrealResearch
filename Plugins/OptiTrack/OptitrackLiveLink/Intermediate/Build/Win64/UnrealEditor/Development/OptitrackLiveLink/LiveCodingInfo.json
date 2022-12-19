@@ -4,10 +4,10 @@
 		"Module.OptitrackLiveLink.cpp.obj": [
 			"LiveLinkNatNetModule.cpp.obj",
 			"LiveLinkNatNetRetarget.cpp.obj",
+			"LiveLinkNatNetSourceFactory.cpp.obj",
 			"LiveLinkNatNetSettings.cpp.obj",
 			"LiveLinkNatNetSource.cpp.obj",
 			"LiveLinkNatNetSourceEditorWidget.cpp.obj",
-			"LiveLinkNatNetSourceFactory.cpp.obj",
 			"OptitrackLiveLinkDisplay.cpp.obj",
 			"RetargetSkeleton.cpp.obj"
 		],

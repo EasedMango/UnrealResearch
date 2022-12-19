@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracklivelink\\source\\optitracklivelink\\private\\livelinknatnetsettings.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\intermediate\\build\\win64\\assignmentoneeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracklivelink\\intermediate\\build\\win64\\unrealeditor\\development\\optitracklivelink\\definitions.optitracklivelink.h",
+            "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracklivelink\\source\\optitracklivelink\\public\\livelinknatnetsettings.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\livelinkinterface\\public\\livelinksourcesettings.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\livelinkinterface\\public\\livelinksourcefactory.h",
+            "c:\\dev\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\livelinksourcefactory.generated.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\livelinkinterface\\public\\livelinktypes.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\livelinkinterface\\public\\livelinkrefskeleton.h",
+            "c:\\dev\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\livelinkrefskeleton.generated.h",
+            "c:\\dev\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\livelinktypes.generated.h",
+            "c:\\dev\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\livelinksourcesettings.generated.h",
+            "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracklivelink\\intermediate\\build\\win64\\unrealeditor\\inc\\optitracklivelink\\livelinknatnetsettings.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

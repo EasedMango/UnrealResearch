@@ -13,28 +13,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OPTITRACKNATNET_OptitrackSkeletonTypes_generated_h
 
-#define FID_UnrealResearch_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h_11_GENERATED_BODY \
+#define FID_AssignmentOne_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h_11_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOptitrackPose_Statics; \
 	OPTITRACKNATNET_API static class UScriptStruct* StaticStruct();
 
 
 template<> OPTITRACKNATNET_API UScriptStruct* StaticStruct<struct FOptitrackPose>();
 
-#define FID_UnrealResearch_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h_84_GENERATED_BODY \
+#define FID_AssignmentOne_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h_84_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOptitrackBoneDefinition_Statics; \
 	OPTITRACKNATNET_API static class UScriptStruct* StaticStruct();
 
 
 template<> OPTITRACKNATNET_API UScriptStruct* StaticStruct<struct FOptitrackBoneDefinition>();
 
-#define FID_UnrealResearch_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h_103_GENERATED_BODY \
+#define FID_AssignmentOne_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h_103_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOptitrackSkeletonDefinition_Statics; \
 	OPTITRACKNATNET_API static class UScriptStruct* StaticStruct();
 
 
 template<> OPTITRACKNATNET_API UScriptStruct* StaticStruct<struct FOptitrackSkeletonDefinition>();
 
-#define FID_UnrealResearch_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h_120_GENERATED_BODY \
+#define FID_AssignmentOne_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h_120_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FOptitrackSkeletonState_Statics; \
 	OPTITRACKNATNET_API static class UScriptStruct* StaticStruct();
 
@@ -42,7 +42,7 @@ template<> OPTITRACKNATNET_API UScriptStruct* StaticStruct<struct FOptitrackSkel
 template<> OPTITRACKNATNET_API UScriptStruct* StaticStruct<struct FOptitrackSkeletonState>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UnrealResearch_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h
+#define CURRENT_FILE_ID FID_AssignmentOne_Plugins_OptiTrack_OptitrackNatnet_Source_OptitrackNatnet_Public_OptitrackSkeletonTypes_h
 
 
 #define FOREACH_ENUM_EOPTITRACKBONENAMINGCONVENTION(op) \

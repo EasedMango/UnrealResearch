@@ -59,6 +59,10 @@
 		{
 			"Name": "OptitrackNatnet",
 			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemOculus",
+			"Enabled": true
 		}
 	]
 }

@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracknatnet\\source\\optitracknatnet\\private\\optitracknatnet.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\intermediate\\build\\win64\\assignmentoneeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracknatnet\\intermediate\\build\\win64\\unrealeditor\\development\\optitracknatnet\\definitions.optitracknatnet.h",
+            "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracknatnet\\source\\optitracknatnet\\public\\optitracknatnet.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\core\\public\\misc\\messagedialog.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "c:\\dev\\ue_5.0\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracknatnet\\thirdparty\\natnetsdk\\include\\natnetcapi.h",
+            "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracknatnet\\thirdparty\\natnetsdk\\include\\natnettypes.h",
+            "c:\\users\\joshua\\documents\\unreal projects\\assignmentone\\plugins\\optitrack\\optitracknatnet\\thirdparty\\natnetsdk\\include\\natnetclient.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

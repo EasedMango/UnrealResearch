@@ -1,6 +1,6 @@
-C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Module.OptitrackLiveLink.gen.cpp
+"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Module.OptitrackLiveLink.gen.cpp"
 /I .
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Source\OptitrackLiveLink\Private
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\Source\OptitrackLiveLink\Private"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\TimeManagement
 /I Runtime
 /I Runtime\TimeManagement\Public
@@ -259,9 +259,9 @@ C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\Optitr
 /I Runtime\LiveLinkInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\LiveLinkMessageBusFramework
 /I Runtime\LiveLinkMessageBusFramework\Public
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Inc\OptitrackLiveLink
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Source
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Source\OptitrackLiveLink\Public
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Inc\OptitrackLiveLink"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\Source"
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\Source\OptitrackLiveLink\Public"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\LiveLinkAnimationCore
 /I Runtime\LiveLinkAnimationCore\Public
 /I ThirdParty\mimalloc\include
@@ -278,19 +278,19 @@ C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\Optitr
 /I ThirdParty\PhysX3\PhysX_3.4\Include\common
 /I ThirdParty\PhysX3\PhysX_3.4\Include\extensions
 /I ThirdParty\PhysX3\PhysX_3.4\Include\geometry
-/I C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\ThirdParty\NatNetSDK\include
+/I "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\ThirdParty\NatNetSDK\include"
 /I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Definitions.OptitrackLiveLink.h"
-/Yu"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Module.OptitrackLiveLink.gen.cpp.obj"
-/sourceDependencies C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Module.OptitrackLiveLink.gen.cpp.json
+/FI"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Definitions.OptitrackLiveLink.h"
+/Yu"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Module.OptitrackLiveLink.gen.cpp.obj"
+/sourceDependencies "C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackLiveLink\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackLiveLink\Module.OptitrackLiveLink.gen.cpp.json"
 /Zc:inline
 /nologo
 /Oi

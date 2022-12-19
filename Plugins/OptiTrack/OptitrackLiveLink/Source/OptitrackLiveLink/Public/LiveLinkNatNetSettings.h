@@ -52,14 +52,6 @@ public:
 	UPROPERTY(EditAnywhere, Category = "StreamedDataOffset")
 	float Scale = 1;
 
-	/** Whether to create LiveLink subjects for labeled markers */
-	UPROPERTY(EditAnywhere, Category = "Markers")
-	bool CreateLabeledMarkerSubjects = false;
-
-	/** Whether to create LiveLink subjects for unlabeled markers */
-	UPROPERTY(EditAnywhere, Category = "Markers")
-	bool CreateUnlabeledMarkerSubjects = false;
-
 	/** Set LiveLink as timecode provider */
 	UPROPERTY(EditAnywhere, Category = "TimecodeProvider")
 	bool TimecodeProvider = false;

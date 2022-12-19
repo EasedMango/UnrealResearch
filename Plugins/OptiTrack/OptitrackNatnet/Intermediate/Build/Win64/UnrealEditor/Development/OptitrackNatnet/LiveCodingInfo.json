@@ -6,11 +6,11 @@
 			"OptitrackAnimInstance.cpp.obj",
 			"OptitrackClientOrigin.cpp.obj",
 			"OptitrackDebugHUD.cpp.obj",
-			"OptitrackNatnet.cpp.obj",
 			"OptitrackRigidBodyActor.cpp.obj",
 			"OptitrackRigidBodyComponent.cpp.obj",
 			"OptitrackSkeletonComponent.cpp.obj",
-			"OptitrackSkeletonTypes.cpp.obj"
+			"OptitrackSkeletonTypes.cpp.obj",
+			"OptitrackNatnet.cpp.obj"
 		],
 		"Module.OptitrackNatnet.gen.cpp.obj": [
 			"AnimNode_OptitrackSkeleton.gen.cpp.obj",

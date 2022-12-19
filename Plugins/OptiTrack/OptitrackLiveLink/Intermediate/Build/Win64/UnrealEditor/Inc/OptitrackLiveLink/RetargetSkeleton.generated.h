@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define OPTITRACKLIVELINK_RetargetSkeleton_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UnrealResearch_Plugins_OptiTrack_OptitrackLiveLink_Source_OptitrackLiveLink_Public_RetargetSkeleton_h
+#define CURRENT_FILE_ID FID_AssignmentOne_Plugins_OptiTrack_OptitrackLiveLink_Source_OptitrackLiveLink_Public_RetargetSkeleton_h
 
 
 #define FOREACH_ENUM_OPTITRACKBONEID(op) \

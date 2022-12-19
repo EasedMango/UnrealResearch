@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeOptitrackNatnetEditor_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000040,
-				0x17E18995,
+				0xBD2A4415,
 				0x24431F04,
 				METADATA_PARAMS(nullptr, 0)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeOptitrackNatnetEditor_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_OptitrackNatnetEditor.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OptitrackNatnetEditor(Z_Construct_UPackage__Script_OptitrackNatnetEditor, TEXT("/Script/OptitrackNatnetEditor"), Z_Registration_Info_UPackage__Script_OptitrackNatnetEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x17E18995, 0x24431F04));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OptitrackNatnetEditor(Z_Construct_UPackage__Script_OptitrackNatnetEditor, TEXT("/Script/OptitrackNatnetEditor"), Z_Registration_Info_UPackage__Script_OptitrackNatnetEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xBD2A4415, 0x24431F04));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

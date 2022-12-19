@@ -31,11 +31,6 @@ You should end up with a directory hierarchy such as the following:
 Version History / Changelog
 ---------------------------
 
-3.0.3 (2021-06-13)
-----
-- Live Link Plugin: Added the option to include labeled or unlabeled markers by enabling them through the Live Link streaming client.
-- Live Link Plugin: Fix for crash retargeting skeleton with different bone count in LODs.
-
 3.0.2 (2021-04-12)
 ----
 - Unreal Engine 5.0 compatibility

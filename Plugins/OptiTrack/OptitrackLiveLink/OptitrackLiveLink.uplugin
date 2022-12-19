@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 7,
-	"VersionName": "3.0.3",
+	"Version": 6,
+	"VersionName": "3.0.2",
 	"FriendlyName": "OptiTrack - Live Link",
 	"Description": "Provides a Live Link source for streaming data from OptiTrack's software Motive.",
 	"Category": "OptiTrack",

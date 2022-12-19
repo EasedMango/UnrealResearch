@@ -2,7 +2,7 @@
 	"BuildId": "19505902",
 	"Modules": 
 	{
-		"OptitrackNatnet": "UnrealEditor-OptitrackNatnet-0003.dll",
-		"OptitrackNatnetEditor": "UnrealEditor-OptitrackNatnetEditor-0003.dll"
+		"OptitrackNatnet": "UnrealEditor-OptitrackNatnet.dll",
+		"OptitrackNatnetEditor": "UnrealEditor-OptitrackNatnetEditor.dll"
 	}
 }

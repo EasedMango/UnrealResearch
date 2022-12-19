@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AssignmentOneGameMode.h"
 #include "MyGameState.h"
 #include "GameFramework/HUD.h"
 #include "PlayerHud.generated.h"
@@ -15,7 +16,7 @@ class ASSIGNMENTONE_API APlayerHud : public AHUD
 {
 	GENERATED_BODY()
 	UPROPERTY()
-	AMyGameState* GameMode;
+	AAssignmentOneGameMode* GameMode;
 public:
 	virtual void BeginPlay() override;
 	virtual void DrawHUD() override;

@@ -99,16 +99,6 @@ void EmptyLinkFunctionForGeneratedCodeLiveLinkNatNetSettings() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_Scale;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CreateLabeledMarkerSubjects_MetaData[];
-#endif
-		static void NewProp_CreateLabeledMarkerSubjects_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_CreateLabeledMarkerSubjects;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CreateUnlabeledMarkerSubjects_MetaData[];
-#endif
-		static void NewProp_CreateUnlabeledMarkerSubjects_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_CreateUnlabeledMarkerSubjects;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_TimecodeProvider_MetaData[];
 #endif
 		static void NewProp_TimecodeProvider_SetBit(void* Obj);
@@ -161,32 +151,6 @@ void EmptyLinkFunctionForGeneratedCodeLiveLinkNatNetSettings() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_Scale = { "Scale", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOptitrackLiveLinkSourceSettings, Scale), METADATA_PARAMS(Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_Scale_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_Scale_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateLabeledMarkerSubjects_MetaData[] = {
-		{ "Category", "Markers" },
-		{ "Comment", "/** Whether to create LiveLink subjects for labeled markers */" },
-		{ "ModuleRelativePath", "Public/LiveLinkNatNetSettings.h" },
-		{ "ToolTip", "Whether to create LiveLink subjects for labeled markers" },
-	};
-#endif
-	void Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateLabeledMarkerSubjects_SetBit(void* Obj)
-	{
-		((UOptitrackLiveLinkSourceSettings*)Obj)->CreateLabeledMarkerSubjects = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateLabeledMarkerSubjects = { "CreateLabeledMarkerSubjects", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UOptitrackLiveLinkSourceSettings), &Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateLabeledMarkerSubjects_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateLabeledMarkerSubjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateLabeledMarkerSubjects_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateUnlabeledMarkerSubjects_MetaData[] = {
-		{ "Category", "Markers" },
-		{ "Comment", "/** Whether to create LiveLink subjects for unlabeled markers */" },
-		{ "ModuleRelativePath", "Public/LiveLinkNatNetSettings.h" },
-		{ "ToolTip", "Whether to create LiveLink subjects for unlabeled markers" },
-	};
-#endif
-	void Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateUnlabeledMarkerSubjects_SetBit(void* Obj)
-	{
-		((UOptitrackLiveLinkSourceSettings*)Obj)->CreateUnlabeledMarkerSubjects = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateUnlabeledMarkerSubjects = { "CreateUnlabeledMarkerSubjects", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UOptitrackLiveLinkSourceSettings), &Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateUnlabeledMarkerSubjects_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateUnlabeledMarkerSubjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateUnlabeledMarkerSubjects_MetaData)) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_TimecodeProvider_MetaData[] = {
 		{ "Category", "TimecodeProvider" },
 		{ "Comment", "/** Set LiveLink as timecode provider */" },
@@ -212,8 +176,6 @@ void EmptyLinkFunctionForGeneratedCodeLiveLinkNatNetSettings() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_Location,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_Orientation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_Scale,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateLabeledMarkerSubjects,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_CreateUnlabeledMarkerSubjects,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_TimecodeProvider,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOptitrackLiveLinkSourceSettings_Statics::NewProp_SubjectName,
 	};
@@ -257,9 +219,9 @@ void EmptyLinkFunctionForGeneratedCodeLiveLinkNatNetSettings() {}
 		{ EOptitrackLiveLinkConnectionType_StaticEnum, TEXT("EOptitrackLiveLinkConnectionType"), &Z_Registration_Info_UEnum_EOptitrackLiveLinkConnectionType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1783687150U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_OptitrackLiveLink_Source_OptitrackLiveLink_Public_LiveLinkNatNetSettings_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UOptitrackLiveLinkSourceSettings, UOptitrackLiveLinkSourceSettings::StaticClass, TEXT("UOptitrackLiveLinkSourceSettings"), &Z_Registration_Info_UClass_UOptitrackLiveLinkSourceSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOptitrackLiveLinkSourceSettings), 2070869989U) },
+		{ Z_Construct_UClass_UOptitrackLiveLinkSourceSettings, UOptitrackLiveLinkSourceSettings::StaticClass, TEXT("UOptitrackLiveLinkSourceSettings"), &Z_Registration_Info_UClass_UOptitrackLiveLinkSourceSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOptitrackLiveLinkSourceSettings), 2903967411U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_OptitrackLiveLink_Source_OptitrackLiveLink_Public_LiveLinkNatNetSettings_h_2873230394(TEXT("/Script/OptitrackLiveLink"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_OptitrackLiveLink_Source_OptitrackLiveLink_Public_LiveLinkNatNetSettings_h_4076686062(TEXT("/Script/OptitrackLiveLink"),
 		Z_CompiledInDeferFile_FID_HostProject_Plugins_OptitrackLiveLink_Source_OptitrackLiveLink_Public_LiveLinkNatNetSettings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_OptitrackLiveLink_Source_OptitrackLiveLink_Public_LiveLinkNatNetSettings_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_HostProject_Plugins_OptitrackLiveLink_Source_OptitrackLiveLink_Public_LiveLinkNatNetSettings_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_OptitrackLiveLink_Source_OptitrackLiveLink_Public_LiveLinkNatNetSettings_h_Statics::EnumInfo));

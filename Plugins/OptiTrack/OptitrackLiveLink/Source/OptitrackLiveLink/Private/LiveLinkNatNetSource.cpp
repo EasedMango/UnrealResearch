@@ -18,6 +18,7 @@
 
 
 #define LOCTEXT_NAMESPACE "LiveLinkNatNetSource"
+#define ENABLE_SKELETON_STREAMING 1
 
 const FString FLiveLinkNatNetSource::LiveLinkNatNetSourceName( "OptiTrack" );
 
@@ -29,10 +30,12 @@ FLiveLinkNatNetSource::FLiveLinkNatNetSource( const FOptitrackLiveLinkSettings& 
 	SourceStatus = LOCTEXT( "SourceStatus", "No Connection" );
 }
 
+
 FLiveLinkNatNetSource::~FLiveLinkNatNetSource()
 {
 
 }
+
 
 void FLiveLinkNatNetSource::ReceiveClient( ILiveLinkClient* InClient, FGuid InSourceGuid )
 {
@@ -168,16 +171,6 @@ void FLiveLinkNatNetSource::SetSourceSettings( UOptitrackLiveLinkSourceSettings&
 	StreamDataOrigin = FTransform( Settings.Orientation, Settings.Location );
 	StreamDataScale = Settings.Scale;
 
-	if( bLabeledMarkersEnabled != Settings.CreateLabeledMarkerSubjects ||
-		bUnlabeledMarkersEnabled != Settings.CreateUnlabeledMarkerSubjects )
-	{
-		bLabeledMarkersEnabled = Settings.CreateLabeledMarkerSubjects;
-		bUnlabeledMarkersEnabled = Settings.CreateUnlabeledMarkerSubjects;
-
-		ClearDataDescriptions();
-		GenerateDataDescriptions();
-	}
-
 	if( Settings.TimecodeProvider )
 		SetTimecodeProvider();
 	else
@@ -297,6 +290,7 @@ void FLiveLinkNatNetSource::GenerateDataDescriptions()
 	{
 		const sDataDescription& dataDesc = NNDataDescs->arrDataDescriptions[iDesc];
 
+#if ENABLE_SKELETON_STREAMING
 		//// =================
 		//// Skeletons
 		//// =================
@@ -359,6 +353,7 @@ void FLiveLinkNatNetSource::GenerateDataDescriptions()
 			std::lock_guard<std::mutex> Lock( AssetMutex );
 			LLAssets.Add({ LLSourceGuid, skelName });
 		}
+#endif
 
 		// =================
 		// Rigid Bodies
@@ -379,76 +374,7 @@ void FLiveLinkNatNetSource::GenerateDataDescriptions()
 			LLAssets.Add( { LLSourceGuid, rbName } );
 		}
 
-        // =================
-		// Markers
-		// =================
-		if( bLabeledMarkersEnabled )
-		{
-			if( dataDesc.type == Descriptor_MarkerSet )
-			{
-				const sMarkerSetDescription& markerSetDesc = *dataDesc.Data.MarkerSetDescription;
-
-				if( FString( markerSetDesc.szName ).Compare( "All", ESearchCase::IgnoreCase ) != 0 )
-				{
-					// Cache mapping from NatNet ID to FName
-					FName markerSetName( "Markers_" + FString( markerSetDesc.szName ) );
-
-					// Populate Marker Descriptions
-					TArray<FName> markerNames;
-					markerNames.SetNumUninitialized( markerSetDesc.nMarkers );
-					TArray<int32> markerParents;
-					markerParents.SetNumUninitialized( markerSetDesc.nMarkers );
-					for( int i = 0; i < markerSetDesc.nMarkers; ++i )
-					{
-						markerNames[i] = *FString( markerSetDesc.szMarkerNames[i] );
-						markerParents[i] = -1; // Assign to root
-					}
-
-					// Build reference skeleton for subject(s)
-					FLiveLinkStaticDataStruct subDataStruct = FLiveLinkStaticDataStruct( FLiveLinkSkeletonStaticData::StaticStruct() );
-					FLiveLinkSkeletonStaticData& refMarkerSet = *subDataStruct.Cast<FLiveLinkSkeletonStaticData>();
-					refMarkerSet.SetBoneNames( markerNames );
-					refMarkerSet.SetBoneParents( markerParents );
-
-					// Populate MarkerSet hierarchy to LiveLink
-					LLClient->PushSubjectStaticData_AnyThread( { LLSourceGuid, markerSetName }, ULiveLinkAnimationRole::StaticClass(), MoveTemp( subDataStruct ) );
-
-					std::lock_guard<std::mutex> Lock( AssetMutex );
-					LLAssets.Add( { LLSourceGuid, markerSetName } );
-				}
-			}
-		}
-
 		SourceStatus = LOCTEXT( "SourceStatus", "Data Descriptions Received" );
-	}
-
-	// =================
-	// Unlabeled Markers
-	// =================
-	if( bUnlabeledMarkersEnabled )
-	{
-		FName unlabeledMarkerName( "Markers_Unlabeled" );
-
-		FLiveLinkStaticDataStruct dataStruct = FLiveLinkStaticDataStruct( FLiveLinkSkeletonStaticData::StaticStruct() );
-		FLiveLinkSkeletonStaticData& unlabeledMarkers = *dataStruct.Cast<FLiveLinkSkeletonStaticData>();
-
-		TArray<FName> markerNames;
-		markerNames.SetNumUninitialized( kMaximumUnlabeledMarkers );
-		TArray<int32> markerParents;
-		markerParents.SetNumUninitialized( kMaximumUnlabeledMarkers );
-		for( int i = 0; i < kMaximumUnlabeledMarkers; ++i )
-		{
-			markerNames[i] = "Unlabeled_" + i + 1;
-			markerParents[i] = -1; // Assign to root
-		}
-		unlabeledMarkers.SetBoneNames( markerNames );
-		unlabeledMarkers.SetBoneParents( markerParents );
-
-		// Populate MarkerSet hierarchy to LiveLink
-		LLClient->PushSubjectStaticData_AnyThread( { LLSourceGuid, unlabeledMarkerName }, ULiveLinkAnimationRole::StaticClass(), MoveTemp( dataStruct ) );
-
-		std::lock_guard<std::mutex> Lock( AssetMutex );
-		LLAssets.Add( { LLSourceGuid, unlabeledMarkerName } );
 	}
 }
 
@@ -465,6 +391,7 @@ void FLiveLinkNatNetSource::ClearDataDescriptions()
 	}
 	LLAssets.Empty();
 }
+
 
 bool compareFloat( float x, float y, float epsilon = 0.01f )
 {
@@ -589,6 +516,7 @@ void FLiveLinkNatNetSource::NatNetFrameReceivedCallback( sFrameOfMocapData* NewF
 	const float kCoordScalingFactor = 100.0f;
 //	const FVector boneScale = FVector( 1.0, 1.0, 1.0 );
 
+#if ENABLE_SKELETON_STREAMING
 	//// =================
 	//// Skeletons
 	//// =================
@@ -602,6 +530,7 @@ void FLiveLinkNatNetSource::NatNetFrameReceivedCallback( sFrameOfMocapData* NewF
 		}
 
 		FLiveLinkFrameDataStruct frameDataStruct = FLiveLinkFrameDataStruct(FLiveLinkAnimationFrameData::StaticStruct());
+
 		FLiveLinkAnimationFrameData& animFrame = *frameDataStruct.Cast<FLiveLinkAnimationFrameData>();
 		TArray<FTransform>& transforms = animFrame.Transforms;
 		transforms.SetNumZeroed( skelData.nRigidBodies + 1 );
@@ -673,6 +602,7 @@ void FLiveLinkNatNetSource::NatNetFrameReceivedCallback( sFrameOfMocapData* NewF
 		LLClient->PushSubjectFrameData_AnyThread({ LLSourceGuid, *skelName }, MoveTemp( frameDataStruct ));
 		//UE_LOG(LogOptitrackLiveLink, Log, TEXT("Adding Data for skeleton %d"), *skelName->ToString());
 	}
+#endif
 
 	// =================
 	// Rigid Bodies
@@ -706,98 +636,6 @@ void FLiveLinkNatNetSource::NatNetFrameReceivedCallback( sFrameOfMocapData* NewF
 
 		LLClient->PushSubjectFrameData_AnyThread( { LLSourceGuid, rbName }, MoveTemp( transformFrameDataStruct ) );
 		//UE_LOG(LogOptitrackLiveLink, Log, TEXT("Adding Data for rigid body %d"), *rbName->ToString());
-	}
-
-    //// =================
-	//// Markers
-	//// =================
-	if( bLabeledMarkersEnabled )
-	{
-		for( int i = 0; i < NewFrame->nMarkerSets; ++i )
-		{
-			const sMarkerSetData& markerSetData = NewFrame->MocapData[i];
-
-			FName markerSetName( "Markers_" + FString( markerSetData.szName ) );
-
-			FLiveLinkFrameDataStruct frameDataStruct = FLiveLinkFrameDataStruct( FLiveLinkAnimationFrameData::StaticStruct() );
-			FLiveLinkAnimationFrameData& animFrame = *frameDataStruct.Cast<FLiveLinkAnimationFrameData>();
-			TArray<FTransform>& transforms = animFrame.Transforms;
-			transforms.SetNumZeroed( markerSetData.nMarkers);
-
-			// Unpack the marker data
-			for( int iMarker = 0; iMarker < markerSetData.nMarkers; iMarker++ )
-			{
-				double x = markerSetData.Markers[iMarker][0];
-				double y = markerSetData.Markers[iMarker][1];
-				double z = markerSetData.Markers[iMarker][2];
-
-				//Check validity
-				if( isnan( x ) || isnan( y ) || isnan( z ) )
-				{
-					continue;
-				}
-
-				FVector pos( x, y, z );
-				pos *= kCoordScalingFactor;
-				pos = VectorSwitchHandedness( pos );
-				pos = VectorZUpXForward( pos );
-				transforms[iMarker] = FTransform( FQuat::Identity, pos ) * StreamDataOrigin;
-			}
-
-			// Set the world time and timecode 
-			animFrame.WorldTime = LLWorldTime;
-			animFrame.ArrivalTime.WorldTime = LLWorldTime.GetSourceTime();
-
-			if( LLSceneTime.Rate.IsValid() )
-			{
-				animFrame.MetaData.SceneTime = LLSceneTime;
-				animFrame.ArrivalTime.SceneTime = LLSceneTime;
-			}
-
-			LLClient->PushSubjectFrameData_AnyThread( { LLSourceGuid, markerSetName }, MoveTemp( frameDataStruct ) );
-		}
-	}
-
-	//// =================
-	//// Unlabeled Markers
-	//// =================
-	if( bUnlabeledMarkersEnabled )
-	{
-		FLiveLinkFrameDataStruct frameDataStruct = FLiveLinkFrameDataStruct( FLiveLinkAnimationFrameData::StaticStruct() );
-		FLiveLinkAnimationFrameData& animFrame = *frameDataStruct.Cast<FLiveLinkAnimationFrameData>();
-		TArray<FTransform>& transforms = animFrame.Transforms;
-		transforms.SetNumZeroed( kMaximumUnlabeledMarkers );
-
-		for( int i = 0; i < NewFrame->nOtherMarkers; i++ )
-		{ 
-			float x = NewFrame->OtherMarkers[i][0];
-			float y = NewFrame->OtherMarkers[i][1];
-			float z = NewFrame->OtherMarkers[i][2];
-
-			//Check validity
-			if( isnan( x ) || isnan( y ) || isnan( z ) )
-			{
-				continue;
-			}
-
-			FVector pos( x, y, z );
-			pos *= kCoordScalingFactor;
-			pos = VectorSwitchHandedness( pos );
-			pos = VectorZUpXForward( pos );
-			transforms[i] = FTransform( FQuat::Identity, pos ) * StreamDataOrigin;
-		}
-
-		// Set the world time and timecode 
-		animFrame.WorldTime = LLWorldTime;
-		animFrame.ArrivalTime.WorldTime = LLWorldTime.GetSourceTime();
-
-		if( LLSceneTime.Rate.IsValid() )
-		{
-			animFrame.MetaData.SceneTime = LLSceneTime;
-			animFrame.ArrivalTime.SceneTime = LLSceneTime;
-		}
-
-		LLClient->PushSubjectFrameData_AnyThread( { LLSourceGuid, "Markers_Unlabeled" }, MoveTemp( frameDataStruct ) );
 	}
 
 	// Reset data dec if data descriptions have changed

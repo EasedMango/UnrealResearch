@@ -125,10 +125,6 @@ private:
 	bool bUpdateFrameRate = false;
 	bool bDetectLiveEditModeChange = false;
 	bool bMotiveLiveMode = false;
-	bool bLabeledMarkersEnabled = false;
-	bool bUnlabeledMarkersEnabled = false;
-
-	static const int kMaximumUnlabeledMarkers = 100;
 
 public:
 	static const FString LiveLinkNatNetSourceName;

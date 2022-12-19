@@ -6,8 +6,9 @@
 /NAME:"UnrealEditor-OptitrackNatnet.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\Module.OptitrackNatnet.cpp.obj"
-"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\Module.OptitrackNatnet.gen.cpp.obj"
-"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\Default.rc2.res"
-/OUT:"C:\Users\CTIMo\Desktop\UnrealOptitrackVR\UnrealResearch\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\UnrealEditor-OptitrackNatnet.lib"
+"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Intermediate\Build\Win64\AssignmentOneEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\Module.OptitrackNatnet.cpp.obj"
+"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\OptitrackNatnet.cpp.obj"
+"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\Module.OptitrackNatnet.gen.cpp.obj"
+"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\Default.rc2.res"
+/OUT:"C:\Users\Joshua\Documents\Unreal Projects\AssignmentOne\Plugins\OptiTrack\OptitrackNatnet\Intermediate\Build\Win64\UnrealEditor\Development\OptitrackNatnet\UnrealEditor-OptitrackNatnet.lib"

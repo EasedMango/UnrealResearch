@@ -452,15 +452,11 @@ void cRetargetSkeleton::Retarget( const cRetargetSkeleton& sourceSkeleton, bool 
 
 void cRetargetSkeleton::GetPose( FCompactPose& pose )
 {
-	const TArray<uint16>& boneIndices = pose.GetBoneContainer().GetBoneIndicesArray();
-	for( int poseIndex = 0; poseIndex < boneIndices.Num(); poseIndex++ )
+	for( int i = 0; i < mBones.Num(); i++ )
 	{
-		int boneIndex = boneIndices[poseIndex];
-		if( boneIndex >= mBones.Num() )
-			continue;
+		const cRetargetBone& bone = mBones[i];
 
-		const cRetargetBone& bone = mBones[boneIndex];
-		FTransform& tr = pose[FCompactPoseBoneIndex( poseIndex )];
+		FTransform& tr = pose[FCompactPoseBoneIndex( i )];
 
 		FVector pos = bone.mFrameTransform.GetTranslation();
 		tr.SetTranslation( tr.GetTranslation() + pos );

@@ -29,7 +29,6 @@ private:
 
 	// FIXME: Probably shouldn't use this widget as its own model
 	TSharedPtr<SCheckBox> ConnectAutomatically;
-	TSharedPtr<SCheckBox> IncludeMarkers;
 	TSharedPtr<SEditableTextBox> ServerIpAddress;
 	TSharedPtr<SEditableTextBox> ClientIpAddress;
 	EOptitrackLiveLinkConnectionType ConnectionType = EOptitrackLiveLinkConnectionType::Multicast;
